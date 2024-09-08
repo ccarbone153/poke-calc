@@ -1,0 +1,8 @@
+{
+  "name": "poke-calc",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "c8aa2046"
+}
