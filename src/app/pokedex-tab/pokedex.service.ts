@@ -17,6 +17,8 @@ export class PokedexService {
         header: true,
         dynamicTyping: true,
         delimiter: ',',
+        skipEmptyLines: true,
+        worker: true,
         complete: (result) => {
           console.log("res" + JSON.stringify(result));
           result.data.forEach((row: any) => {
