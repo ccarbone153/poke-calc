@@ -23,9 +23,9 @@ export class PokedexService {
           console.log("res" + JSON.stringify(result));
           result.data.forEach((row: any) => {
             const pokemon: Pokemon = {
-              name: row.name,
-              type1: row.type1,
-              type2: row.type2,
+              name: row.Name,
+              type1: row.Type1,
+              type2: row.Type2,
               // Map other fields as necessary
             };
             results.push(pokemon);

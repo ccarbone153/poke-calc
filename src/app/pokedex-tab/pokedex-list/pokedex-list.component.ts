@@ -15,8 +15,9 @@ export class PokedexListComponent implements OnInit {
 
   ngOnInit() {
     const corsProxy = 'https://cors-anywhere.herokuapp.com/';
+    const pokemonFilePath = 'https://raw.githubusercontent.com/ccarbone153/poke-calc/csv-debug-testing/src/app/assets/pokemon.csv';
 
-    this.pokedexService.readPokemonData(corsProxy + 'https://github.com/ccarbone153/poke-calc/blob/main/src/app/assets/pokemon.csv?plain=1')
+    this.pokedexService.readPokemonData(corsProxy + pokemonFilePath)
       .then(data => {
         this.pokemonData = data;
         console.log('Data loaded successfully');
