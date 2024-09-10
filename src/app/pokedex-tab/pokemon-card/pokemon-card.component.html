@@ -1,0 +1,39 @@
+<ion-label>
+  <h2>{{ pokemon.name }}</h2>
+  <p>{{ pokemon.type1 }} {{ pokemon.type2 }}</p>
+
+  <div *ngIf="pokemon">
+    <h2>{{ pokemon.name }}</h2>
+    <div class="stat">
+      <label>HP:</label>
+      <progress value="{{ pokemon.hp }}" max="100"></progress>
+      <span>{{ pokemon.hp }}</span>
+    </div>
+    <div class="stat">
+      <label>Attack:</label>
+      <progress value="{{ pokemon.attack }}" max="100"></progress>
+      <span>{{ pokemon.attack }}</span>
+    </div>
+    <div class="stat">
+      <label>Defense:</label>
+      <progress value="{{ pokemon.defense }}" max="100"></progress>
+      <span>{{ pokemon.defense }}</span>
+    </div>
+    <div class="stat">
+      <label>Sp. Atk:</label>
+      <progress value="{{ pokemon.spAtk }}" max="100"></progress>
+      <span>{{ pokemon.spAtk }}</span>
+    </div>
+    <div class="stat">
+      <label>Sp. Def:</label>
+      <progress value="{{ pokemon.spDef }}" max="100"></progress>
+      <span>{{ pokemon.spDef }}</span>
+    </div>
+    <div class="stat">
+      <label>Speed:</label>
+      <progress value="{{ pokemon.speed }}" max="100"></progress>
+      <span>{{ pokemon.speed }}</span>
+    </div>
+  </div>
+
+</ion-label>

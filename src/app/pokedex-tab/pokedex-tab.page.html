@@ -10,12 +10,12 @@
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Pokédex</ion-title>
+      <ion-searchbar (ionInput)="filterList($event)"></ion-searchbar>
     </ion-toolbar>
   </ion-header>
-
-  <div class="pokedex-container">
-    <app-pokedex-list class="pokedex-list"></app-pokedex-list>
-    <app-pokedex-display class="pokedex-display"></app-pokedex-display>
-  </div>
-
+  <ion-list>
+    <ion-item *ngFor="let pokemon of filteredPokemonData">
+      <app-pokemon-card [pokemon]="pokemon"></app-pokemon-card>
+    </ion-item>
+  </ion-list>
 </ion-content>

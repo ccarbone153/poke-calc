@@ -20,13 +20,20 @@ export class PokedexService {
         skipEmptyLines: true,
         worker: true,
         complete: (result) => {
-          console.log("res" + JSON.stringify(result));
           result.data.forEach((row: any) => {
             const pokemon: Pokemon = {
               name: row.Name,
               type1: row.Type1,
               type2: row.Type2,
-              // Map other fields as necessary
+              total: row.Total,
+              hp: row.Hp,
+              attack: row.Attack,
+              defense: row.Defense,
+              spAtk: row.SpAtk,
+              spDef: row.SpDef,
+              speed: row.Speed,
+              generation: row.Generation,
+              legendary: row.Legendary === 1
             };
             results.push(pokemon);
           });

@@ -3,10 +3,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { PokedexTabPage } from './pokedex-tab.page';
+import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 
 import { PokedexTabPageRoutingModule } from './pokedex-tab-routing.module';
-import { PokedexDisplayComponent } from './pokedex-display/pokedex-display.component';
-import { PokedexListComponent } from './pokedex-list/pokedex-list.component';
 
 @NgModule({
   imports: [
@@ -15,6 +14,6 @@ import { PokedexListComponent } from './pokedex-list/pokedex-list.component';
     FormsModule,
     PokedexTabPageRoutingModule
   ],
-  declarations: [PokedexTabPage, PokedexDisplayComponent, PokedexListComponent]
+  declarations: [PokedexTabPage, PokemonCardComponent]
 })
 export class PokedexTabPageModule {}
