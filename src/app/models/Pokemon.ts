@@ -11,4 +11,5 @@ export interface Pokemon {
     speed: number;
     generation: number;
     legendary: boolean;
+    image: string;
 }

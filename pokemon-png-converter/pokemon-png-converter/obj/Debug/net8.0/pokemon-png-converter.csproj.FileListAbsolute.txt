@@ -1,0 +1,15 @@
+G:\poke-calc\pokemon-png-converter\pokemon-png-converter\bin\Debug\net8.0\pokemon-png-converter.exe
+G:\poke-calc\pokemon-png-converter\pokemon-png-converter\bin\Debug\net8.0\pokemon-png-converter.deps.json
+G:\poke-calc\pokemon-png-converter\pokemon-png-converter\bin\Debug\net8.0\pokemon-png-converter.runtimeconfig.json
+G:\poke-calc\pokemon-png-converter\pokemon-png-converter\bin\Debug\net8.0\pokemon-png-converter.dll
+G:\poke-calc\pokemon-png-converter\pokemon-png-converter\bin\Debug\net8.0\pokemon-png-converter.pdb
+G:\poke-calc\pokemon-png-converter\pokemon-png-converter\obj\Debug\net8.0\pokemon-png-converter.GeneratedMSBuildEditorConfig.editorconfig
+G:\poke-calc\pokemon-png-converter\pokemon-png-converter\obj\Debug\net8.0\pokemon-png-converter.AssemblyInfoInputs.cache
+G:\poke-calc\pokemon-png-converter\pokemon-png-converter\obj\Debug\net8.0\pokemon-png-converter.AssemblyInfo.cs
+G:\poke-calc\pokemon-png-converter\pokemon-png-converter\obj\Debug\net8.0\pokemon-png-converter.csproj.CoreCompileInputs.cache
+G:\poke-calc\pokemon-png-converter\pokemon-png-converter\obj\Debug\net8.0\pokemon-png-converter.sourcelink.json
+G:\poke-calc\pokemon-png-converter\pokemon-png-converter\obj\Debug\net8.0\pokemon-png-converter.dll
+G:\poke-calc\pokemon-png-converter\pokemon-png-converter\obj\Debug\net8.0\refint\pokemon-png-converter.dll
+G:\poke-calc\pokemon-png-converter\pokemon-png-converter\obj\Debug\net8.0\pokemon-png-converter.pdb
+G:\poke-calc\pokemon-png-converter\pokemon-png-converter\obj\Debug\net8.0\pokemon-png-converter.genruntimeconfig.cache
+G:\poke-calc\pokemon-png-converter\pokemon-png-converter\obj\Debug\net8.0\ref\pokemon-png-converter.dll

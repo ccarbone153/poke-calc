@@ -1,39 +1,92 @@
-<ion-label>
+<ion-label *ngIf="pokemon">
   <h2>{{ pokemon.name }}</h2>
-  <p>{{ pokemon.type1 }} {{ pokemon.type2 }}</p>
-
-  <div *ngIf="pokemon">
-    <h2>{{ pokemon.name }}</h2>
-    <div class="stat">
-      <label>HP:</label>
-      <progress value="{{ pokemon.hp }}" max="100"></progress>
-      <span>{{ pokemon.hp }}</span>
-    </div>
-    <div class="stat">
-      <label>Attack:</label>
-      <progress value="{{ pokemon.attack }}" max="100"></progress>
-      <span>{{ pokemon.attack }}</span>
-    </div>
-    <div class="stat">
-      <label>Defense:</label>
-      <progress value="{{ pokemon.defense }}" max="100"></progress>
-      <span>{{ pokemon.defense }}</span>
-    </div>
-    <div class="stat">
-      <label>Sp. Atk:</label>
-      <progress value="{{ pokemon.spAtk }}" max="100"></progress>
-      <span>{{ pokemon.spAtk }}</span>
-    </div>
-    <div class="stat">
-      <label>Sp. Def:</label>
-      <progress value="{{ pokemon.spDef }}" max="100"></progress>
-      <span>{{ pokemon.spDef }}</span>
-    </div>
-    <div class="stat">
-      <label>Speed:</label>
-      <progress value="{{ pokemon.speed }}" max="100"></progress>
-      <span>{{ pokemon.speed }}</span>
-    </div>
+  <img *ngIf="pokemon.image" [src]="'data:image/png;base64,' + pokemon.image" alt="{{ pokemon.name }}" />
+  <div class="stat">
+    <label>HP:</label>
+    <progress value="{{ pokemon.hp }}" max="255"></progress>
+    <span>{{ pokemon.hp }}</span>
   </div>
+  <div class="stat">
+    <label>Attack:</label>
+    <progress value="{{ pokemon.attack }}" max="255"></progress>
+    <span>{{ pokemon.attack }}</span>
+  </div>
+  <div class="stat">
+    <label>Defense:</label>
+    <progress value="{{ pokemon.defense }}" max="255"></progress>
+    <span>{{ pokemon.defense }}</span>
+  </div>
+  <div class="stat">
+    <label>Sp. Atk:</label>
+    <progress value="{{ pokemon.spAtk }}" max="255"></progress>
+    <span>{{ pokemon.spAtk }}</span>
+  </div>
+  <div class="stat">
+    <label>Sp. Def:</label>
+    <progress value="{{ pokemon.spDef }}" max="255"></progress>
+    <span>{{ pokemon.spDef }}</span>
+  </div>
+  <div class="stat">
+    <label>Speed:</label>
+    <progress value="{{ pokemon.speed }}" max="255"></progress>
+    <span>{{ pokemon.speed }}</span>
+  </div>
+  <div class="stat">
+    <label>Total:</label>
+    <div class="placeholder-progress"></div>
+    <span>{{ pokemon.total }}</span>
+  </div>
+
+  <div class="type-container">
+    <img [src]="'assets/type-badges/' + pokemon.type1 + '.png'" alt="{{ pokemon.type1 }}" />
+    <img *ngIf="pokemon.type2" [src]="'assets/type-badges/' + pokemon.type2 + '.png'" alt="{{ pokemon.type2 }}" />
+  </div>
+
+  <label>Offensive</label>
+  <ion-grid>
+    <ion-row>
+      <ion-col>0x</ion-col>
+      <ion-col>0.5x</ion-col>
+      <ion-col>2x</ion-col>
+      <ion-col>4x</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-row *ngFor="let type of effectivenessChart.x0">
+          <img [src]="'assets/type-badges/' + type + '.png'" alt="{{ type }}" />
+        </ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row *ngFor="let type of effectivenessChart.x05">
+          <img [src]="'assets/type-badges/' + type + '.png'" alt="{{ type }}" />
+        </ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row *ngFor="let type of effectivenessChart.x2">
+          <img [src]="'assets/type-badges/' + type + '.png'" alt="{{ type }}" />
+        </ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row *ngFor="let type of effectivenessChart.x4">
+          <img [src]="'assets/type-badges/' + type + '.png'" alt="{{ type }}" />
+        </ion-row>
+      </ion-col>
+    </ion-row>
+   <ion-row>
+
+   </ion-row>
+   <ion-row>
+    
+   </ion-row>
+   <ion-row>
+    
+   </ion-row>
+   <ion-row>
+    
+   </ion-row>
+  </ion-grid>
+
+<label>Defensive</label>
+
 
 </ion-label>

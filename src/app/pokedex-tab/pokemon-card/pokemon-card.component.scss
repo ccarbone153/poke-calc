@@ -1,0 +1,34 @@
+.stat {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  width: 80px;
+  font-weight: bold;
+}
+
+.stat progress {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.stat span {
+  width: 40px;
+  text-align: right;
+}
+
+.placeholder-progress {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.type-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.type {
+  margin: 10px 0 20px 0;
+}

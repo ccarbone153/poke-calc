@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "pokemon-png-converter/1.0.0": {
+        "runtime": {
+          "pokemon-png-converter.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "pokemon-png-converter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
